@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    text-align: center;
+    width: 100rem;
+    margin: 0 auto;
+	background: rgb(237,244,244);
+background: linear-gradient(90deg, rgba(237,244,244,1) 0%, rgba(36,37,37,1) 48%, rgba(52,53,53,1) 52%, rgba(247,251,250,1) 100%);
+}
+
+body h1 {
+    display: inline-block;
+    margin: 2rem;
+    font-size: 3rem;
+    color: rgba(55, 129, 240, 0.8);
+}
+
+
+/*fault title*/
+
+.fault {
+    height: 3rem;
+    font-size: 2rem;
+    color: rgba(200, 0, 0, .8);
+}
+
+
+/*aplication container*/
+
+.app-container {
+    text-align: center;
+    background-color: rgba(8, 8, 8, 0.8);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    box-shadow: 0 0 5rem rgb(35, 35, 36);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+/*form*/
+
+.task-input {
+    width: 85%;
+    border: none;
+    border-radius: .2rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 2rem;
+    color: rgba(10, 30, 60, .8);
+    transition: .5s;
+}
+
+.validity-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.radio-span {
+    padding: 0 1rem;
+    line-height: 3rem;
+    border-radius: .5rem;
+}
+
+.validity-box input:hover,
+.validity-box label:hover {
+    cursor: pointer;
+}
+
+.app-container .new-task-btn,
+.app-container .reset-btn {
+    width: 25%;
+    border: none;
+    font-size: 2rem;
+    border-radius: .5rem;
+    margin: 1rem 5%;
+    padding: 1rem;
+    color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, .2);
+    transition: .5s;
+}
+
+.new-task-btn:hover,
+.reset-btn:hover {
+    cursor: pointer;
+}
+
+.new-task-btn {
+    background-color: rgba(20, 70, 150, .8);
+}
+
+.new-task-btn:hover {
+    background-color: rgba(30, 80, 160, .9);
+}
+
+.reset-btn {
+    background-color: rgba(150, 0, 20, .8);
+}
+
+.reset-btn:hover {
+    background-color: rgba(160, 10, 30, .9);
+}
+
+
+/*tasks list and toggle class for checked buttons*/
+
+.tasks-list ul {
+    list-style: none;
+}
+
+.tasks-list li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .9);
+    border-radius: .5rem;
+}
+
+.tasks-list p {
+    display: inline-block;
+    margin-left: 3rem;
+    color: rgba(10, 30, 60, .8);
+}
+
+.tasks-list span {
+    margin-right: 3rem;
+}
+
+.toggle-btn,
+.delete-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: .2rem;
+    background: none;
+    font-size: 2rem;
+    color: rgba(10, 30, 60, .8);
+    transition: .5s;
+}
+
+.toggle-btn {
+    left: 1rem;
+}
+
+.delete-btn {
+    right: 1rem;
+    font-weight: bold;
+    color: white;
+    opacity: .5;
+    /*    color: rgba(100, 30, 0, 1);*/
+    font-size: 3rem;
+}
+
+.line-throught {
+    text-decoration: line-through;
+}
+
+.checked-btn {
+    color: rgba(0, 200, 30, .8);
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    cursor: pointer;
+}
